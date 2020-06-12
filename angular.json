@@ -121,8 +121,13 @@
               "devServerTarget": "dof:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "dof"
 }

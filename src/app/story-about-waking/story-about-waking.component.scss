@@ -1,0 +1,46 @@
+.content-bg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  background-color: rgba(156, 162, 63, .57);
+  height: 200px;
+  width: 450px;
+  filter: blur(8px);
+}
+
+.content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 110;
+  background-color: transparent;
+  color: white;
+  width: 450px;
+  font-family: 'Julius Sans One', "Helvetica Neue", Helvetica, sans-serif;
+
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    background-color: #ffc0cb87;
+  }
+
+  .tracklist-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ff000057;
+  }
+
+  .track {
+    align-self: flex-end;
+  }
+
+  .links {
+    display: flex;
+    padding: 10px;
+    background-color: #ff98307d;
+  }
+}

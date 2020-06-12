@@ -1,0 +1,49 @@
+.top {
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.middle {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom {
+  position: fixed;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.content-bg {
+  z-index: 100;
+  background-color: rgba(219, 208, 208, .79);
+  height: 150px;
+  width: 250px;
+  filter: blur(12px);
+}
+
+.content {
+  z-index: 110;
+  background-color: transparent;
+  color: white;
+  width: 200px;
+
+  .header {
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    font-family: 'Monoton', "Helvetica Neue", Helvetica, sans-serif;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    padding: 10px;
+  }
+}

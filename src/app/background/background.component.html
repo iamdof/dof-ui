@@ -1,0 +1,22 @@
+<div
+  *ngFor="let pnl of panels | async"
+  style="position: absolute"
+  [style.left]="pnl.left"
+  [style.top]="pnl.top"
+  [style.width]="pnl.width"
+  [style.height]="pnl.height"
+  [style.backgroundColor]="pnl.bgColor"
+  [style.opacity]="pnl.opacity"
+></div>
+
+<div
+  *ngFor="let sq of squares | async"
+  style="position: absolute; z-index: 5"
+  [style.left]="sq.left"
+  [style.top]="sq.top"
+  [style.width]="sq.width"
+  [style.height]="sq.height"
+  [style.backgroundColor]="sq.bgColor"
+  [style.opacity]="sq.opacity"
+  (click)="toggleMovement()"
+></div>
