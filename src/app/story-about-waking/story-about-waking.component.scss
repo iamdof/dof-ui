@@ -18,7 +18,7 @@
   z-index: 110;
   background-color: transparent;
   color: white;
-  width: 450px;
+  width: 480px;
   font-family: 'Julius Sans One', "Helvetica Neue", Helvetica, sans-serif;
 
   .title-container {
@@ -26,12 +26,14 @@
     flex-direction: column;
     font-size: 1.5em;
     background-color: #ffc0cb87;
+    padding: 4px;
   }
 
   .tracklist-container {
     display: flex;
     flex-direction: column;
     background-color: #ff000057;
+    padding: 4px;
   }
 
   .track {
@@ -42,5 +44,10 @@
     display: flex;
     padding: 10px;
     background-color: #ff98307d;
+    padding: 6px;
+
+    .link {
+      padding-right: 3px;
+    }
   }
 }
